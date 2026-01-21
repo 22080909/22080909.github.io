@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<noscript>Please enable JavaScript to avoid this error</noscript>
+<html>
+
+<head>
+  <title>MWS - Phones</title>
+
+    <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+     <img id="banner" src="./images/MWS_banner.svg">
+
+    <nav>
+        <p id="spacing1">
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('index.html')" > Home </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('android.html')" > Android </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('phones.html')" > Phones </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('upgrades.html')" > Upgrades </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('sim_providers.html')" > Sim Providers </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('phones_upcoming.html')" > Upcoming </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('website_feedback.html')" > Feedback </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('contact_us.html')" > Contact - Us </div>
+        </p>
+    </nav>
+
+    <script>
+      var Og
+      function MOver(obj) {
+        Og = obj.style.background
+        obj.style.background = "#de7214"
+      }
+      function MOut(obj) {
+        obj.style.background = Og
+      }
+      function Click(LinkToPages) {
+       window.open(LinkToPages,"_blank")
+      }
+    </script>
+
+ <!-- Master Page above! ONLY EDIT IF YOU KNOW HOW TO. -->
+<img src="images/phone-android.jpg" height="250px" width="250px" class="imagealignright">
+<br> <br>
+
+
+
+  <p>With getting phones you'll need to know what operating system you'll need so far there are 2 choices with 1 being deprecated (Microsoft Windows phone) The 2 main ones as of 2026 are Android and IOS (Apple). Android was made public in 2008 and they focused on camera development whilst the IOS was made in 2007 which was called IOS 1</p>
+  <br>
+  <p> With the buttons below </p>
+
+
+ <button type="button" onclick="Appear(this,'android')" >Android</button>
+ <button type="button" onclick="Appear(this,'apple')" >Apple</button>
+ 
+
+ <br> <br> <br> <br>
+
+<div height = 120px width = 50px id="text"  style="border: 3px solid green;" > <strong> Press a button to see information about the operating system you might want to know about. </strong>  </div>
+
+ <script>
+  var OBJ,Selected;
+  const CustomText = document.getElementById("text"); // My code works like this. Button pressed --> Sends function to script --> Script checks what button was pressed and if the object isn't null --> displays text. done
+  function Appear(obj,Item) {
+    if (Item == "android") {
+      if (OBJ != null) {
+      }
+    console.log("Android Pressed");
+    CustomText.innerHTML = " Android has been around since 2008 and has been popular with the first phone being a HTC having android 1 on it, It has evolved to being super modern and classy more than windows phone, This is the true original OS for phones, it has many great features and advanced ones too! One of the many benefits of Android is studies show that mobile phone thieves tend to go for Iphones as they're more expensive and are well known for their status. Another advantage is that transfering data to another Android is seemless with no issues. However it does have its disadvantages which are: People complain about battery life on Androids (pre-2024), people will call you poor cause of the 'you own a android so you must be poor' even though you own a £1000+ phone.<strong> However that stigma has decreased as people realise that Androids are overpowering Iphones. </strong> ";
+   }
+
+   OBJ = obj
+
+   if (Item == "apple") {
+      if (OBJ != null) {
+      } 
+    console.log("Apple Pressed");
+    CustomText.innerHTML = " IOS or Iphone Operating System, Has been around since 2007. Starting with the IOS 1 released on the Iphone 'First Generation', it evolved from a basic look to a modern classy look with easy to use menus and accessability options, however advanced features are very limited on IOS platforms. Most IOS phones now (IOS 18+ or Iphone 14+) have satalite messaging when you're in a pickle you can send a SOS call however its only free for 2 years after that you have to pay a subscription. The advantages of IOS are: Longer battery life (Optimised OS), Apple eco-system connectivity like your earbuds connecting to your laptop then to your phone. However the disadvantages are: expensive base model phone <i>(Iphone 17 £799 as of 08/01/2026)</i>, Many exploits that are not patch on IOS known as 'Zero Days'. "
+   
+   OBJ = obj
+   }
+  }
+  
+ </script>
+
+
+
+<br> <br> <br> <br>
+
+<p> <strong> How we can help </strong>  -  We'll help you find your phone thats got the good specifications and statistics, from Samsung to Apple devices we have a selection of devices to compare. We also have compatible accessories to go with your device or devices.  </p>
+
+    
+    
+
+    <br> <br>
+
+    <footer>
+
+      <p>Website planned and produced by: <strong>Arthur</strong></p>
+      <br>
+        <p><a href="./contact_us.html">Contact us</a> </p>
+    </footer>
+
+</body>
+
+</html>
