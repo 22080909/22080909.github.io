@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<noscript>Please enable JavaScript to avoid this error</noscript>
+<html>
+
+<head>
+  <title>MWS - Sim providers</title>
+
+    <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+     <img id="banner" src="./images/MWS_banner.svg">
+
+    <nav>
+        <p id="spacing1">
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('index.html')" > Home </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('android.html')" > Android </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('phones.html')" > Phones </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('upgrades.html')" > Upgrades </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('sim_providers.html')" > Sim Providers </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('phones_upcoming.html')" > Upcoming </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('website_feedback.html')" > Feedback </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('contact_us.html')" > Contact - Us </div>
+        </p>
+    </nav>
+
+    <script>
+      var Og
+      function MOver(obj) {
+        Og = obj.style.background
+        obj.style.background = "#de7214"
+      }
+      function MOut(obj) {
+        obj.style.background = Og
+      }
+      function Click(LinkToPages) {
+       window.open(LinkToPages,"_blank")
+       window.close(this)
+      }
+    </script>
+
+ <!-- Master Page above! ONLY EDIT IF YOU KNOW HOW TO. -->
+
+<img src="images/sim.jpg" height="320" width="420" class="imagealignright" alt="Hand holding a SIM Card">
+
+<div>
+
+  <h2>SIM Providers</h2>
+  
+  <p>Currently in the UK there are four (4) main companies that hold the stakes in the signals, These companies will often lease a specific wavelength for that brand, so that brand can expand and keep prices low for their customers. Even when you're abroad you still get data and calls (<a href="https://www.vodafone.co.uk/mobile/global-roaming">Depending on country / Zone</a>)</p> 
+  <p> The table below will show which providers are "Hosts" providers meaning they host their own. Compared to "Brand" which uses the "hosts" network</p>
+
+ </div>
+
+
+
+<table>
+ <caption>Network providers in the UK</caption>
+<thread>
+  <tr>
+    <th scope="col"> Name of Company </th>
+    <th scope="col"> Host or Brand? </th>
+    <th scope="col"> Hosts name (If applicable) </th>
+    <th scope="col"> Overall rating </th>
+  </tr>
+</thread>
+<tbody>
+   <tr>
+    <td>EE</td>
+    <td><strong>Host</strong></td>
+    <td>N/A</td>
+    <td><strong>🔴 1.4/5</strong></td>
+  </tr>
+  <tr>
+    <td>O2</td>
+    <td><strong>Host</strong></td>
+    <td>N/A</td>
+    <td><strong>🔴 1.2/5</strong></td>
+  </tr>
+  <tr>
+    <td>Three (3)</td>
+    <td><strong>Host</strong></td>
+    <td>N/A</td>
+    <td><strong>🟢 4.3/5</strong></td>
+  </tr>
+ <tr>
+    <td>Vodafone</td>
+    <td><strong>Host</strong></td>
+    <td>N/A</td>
+    <td><strong>🟢 4.6/5</strong></td>
+  </tr>
+  <tr>
+    <td>Asda Mobile</td>
+    <td><strong>Brand</strong></td>
+    <td>Vodafone</td>
+    <td><strong>🟡 3.7/5</strong></td>
+  </tr>
+  <tr>
+    <td>giffgaff</td>
+    <td><strong>Brand</strong></td>
+    <td>O2</td>
+    <td><strong>🟡 3.8/5</strong></td>
+  </tr>
+  <tr>
+    <td>iD Mobile</td>
+    <td><strong>Brand</strong></td>
+    <td>Three</td>
+    <td><strong>🟢 4.1/5</strong></td>
+  </tr>
+  <tr>
+    <td>Lebara</td>
+    <td><strong>Brand</strong></td>
+    <td>Vodafone</td>
+    <td><strong>🟢 4.8/5</strong></td>
+  </tr>
+  <tr>
+    <td>Lyca Mobile</td>
+    <td><strong>Brand</strong></td>
+    <td>EE</td>
+    <td><strong>🟡 2.9/5</strong></td>
+  </tr>
+  <tr>
+    <td>Sky Mobile</td>
+    <td><strong>Brand</strong></td>
+    <td>O2</td>
+    <td><strong>🔴 1.2/5</strong></td>
+  </tr>
+  <tr>
+    <td>Tesco Mobile</td>
+    <td><strong>Brand</strong></td>
+    <td>O2</td>
+    <td><strong>🟢 4.2/5</strong></td>
+  </tr>
+   <tr>
+    <td>Your Co-op</td>
+    <td><strong>Brand</strong></td>
+    <td>EE</td>
+    <td><strong>🟢 4.1/5</strong></td>
+  </tr>
+   <tr>
+    <td>VOXI</td>
+    <td><strong>Brand</strong></td>
+    <td>Vodafone</td>
+    <td><strong>🟡 3.1/5</strong></td>
+  </tr>
+  
+</tbody>
+</table>
+
+<form style="float: right; border: royalblue, solid, 3px;border-radius: 2% ; margin-right: 10%; margin-top: -15%;">
+
+  <label for="EE">Vote for EE</label>
+  <input type="checkbox" name="EE" id="EE">
+  <br>
+  <label for="O2">Vote for O2</label>
+  <input type="checkbox" name="O2" id="O2">
+    <br>
+  <label for="Three">Vote for Three</label>
+  <input type="checkbox" name="Three" id="Three">
+    <br>
+  <label for="Vodafone">Vote for Vodafone</label>
+  <input type="checkbox" name="Vodafone" id="Vodafone">
+    <br>
+  <label for="misc">If your answer isn't here type it please.</label>
+  <br>
+  <input type="text" name="Brand" id="misc">
+    <br>
+  <input type="submit">
+</form>
+
+<br> <br> 
+
+<p><strong>INFORMATION</strong> - Research about ratings gathered using <a href="https://uk.trustpilot.com/">trustpilot.</a> </p>
+
+<br> <br>
+
+
+
+<p> <strong> How we can help </strong>  -  We'll help you find your phone thats got the good specifications and statistics, from Samsung to Apple devices we have a selection of devices to compare. We also have compatible accessories to go with your device or devices.  </p>
+
+    
+    
+
+    <br> <br>
+
+    <footer>
+
+      <p>Website planned and produced by: <strong>Arthur</strong></p>
+      <br>
+        <p><a href="./index.html">Home</a> | <a href="./android.html">Android</a> </p>
+        <p><a href="./phones.html">Phones</a> | <a href="./upgrades.html">Upgrades</a> </p>
+        <p><a href="./sim_providers.html">SIM providers</a> | <a href="./phones_upcoming.html">Upcoming</a> </p>
+        <p> <a href="./website_feedback.html">Website Feedback</a> | <a href="./contact_us.html">Contact Us</a> </p>
+    </footer>
+
+</body>
+
+</html>

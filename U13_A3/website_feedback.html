@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<noscript>Please enable JavaScript to avoid this error</noscript>
+<html>
+
+<head>
+  <title>MWS - Feedback</title>
+
+    <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+     <img id="banner" src="./images/MWS_banner.svg">
+
+    <nav>
+        <p id="spacing1">
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('index.html')" > Home </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('android.html')" > Android </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('phones.html')" > Phones </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('upgrades.html')" > Upgrades </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('sim_providers.html')" > Sim Providers </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('phones_upcoming.html')" > Upcoming </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('website_feedback.html')" > Feedback </div>
+        <div class="NavBar" onmouseover="MOver(this)" onmouseout="MOut(this)" onclick="Click('contact_us.html')" > Contact - Us </div>
+        </p>
+    </nav>
+
+    <script>
+      var Og
+      function MOver(obj) {
+        Og = obj.style.background
+        obj.style.background = "#de7214"
+      }
+      function MOut(obj) {
+        obj.style.background = Og
+      }
+      function Click(LinkToPages) {
+       window.open(LinkToPages,"_blank")
+       window.close(this)
+      }
+    </script>
+
+ <!-- Master Page above! ONLY EDIT IF YOU KNOW HOW TO. -->
+
+ <br> <br>
+
+<form style="border: royalblue, solid, 3px;">
+<br>
+  <label for="needs">Does this website suit your needs?</label>
+  <br>
+  <label>Yes</label>
+  <input type="checkbox" name="Yes" id="needsY">
+  <label>No</label>
+  <input type="checkbox" name="No" id="needsN">
+  <br> <br>
+  <label>If you selected no, why so?</label>
+  <input type="text" name="NeedsNoExplained" placeholder="Because...">
+  <br><br>
+
+<!-- Website presentation part -->
+
+  <label for="needs">Did you find this website attractive? ( Presentation and decoration )</label>
+  <br>
+  <label>Yes</label>
+  <input type="checkbox" name="Yes it's attractive" id="attractiveY">
+  <label>No</label>
+  <input type="checkbox" name="No it isn't attractive" id="attractiveN">
+  <br> <br>
+  <label>If you selected no, why so?</label>
+  <input type="text" name="NeedsNoExplained" placeholder="Because...">
+  <br>
+  <br>
+  <label for="needs">Did this website have any problems</label>
+  <br>
+  <label>Yes</label>
+  <input type="checkbox" name="Yes it did have problems" id="needsY">
+  <label>No</label>
+  <input type="checkbox" name="No it didn't have problems" id="needsN">
+  <br> <br>
+  <label>If you selected Yes, why so?</label>
+  <input type="text" name="NeedsNoExplained" placeholder="Issues i've encountered were...">
+  <br>
+  <br>
+   <label for="needs">Has the text and anything else been readable?  ( accessibility )</label>
+  <br>
+  <label>Yes</label>
+  <input type="checkbox" name="Yes It has been readable" id="needsY">
+  <label>No</label>
+  <input type="checkbox" name="No it hasn't been readable" id="needsN">
+  <br> <br>
+  <label>If you selected no, why so?</label>
+  <input type="text" name="NeedsNoExplained" placeholder="">
+  <br>
+  <br>
+   <label for="needs">Was all the information gathered correct?</label>
+  <br>
+  <label>Yes</label>
+  <input type="checkbox" name="Yes It has been correct" id="needsY">
+  <label>No</label>
+  <input type="checkbox" name="No it hasn't been correct" id="needsN">
+  <br> <br>
+  <label>If you selected no, why so?</label>
+  <input type="text" name="NeedsNoExplained" placeholder="Because...">
+  <br>
+  <br>
+  <input type="submit">
+</form>
+
+<br> <br> <img src="./images/feedback.png" width="950" height="500" alt="Image of a feedback form"> <br> <br>
+
+
+<p> <strong> How we can help </strong>  -  We'll help you find your phone thats got the good specifications and statistics, from Samsung to Apple devices we have a selection of devices to compare. We also have compatible accessories to go with your device or devices.  </p>
+
+    
+    
+
+    <br> <br>
+
+    <footer>
+
+      <p>Website planned and produced by: <strong>Arthur</strong></p>
+      <br>
+        <p><a href="./index.html">Home</a> | <a href="./android.html">Android</a> </p>
+        <p><a href="./phones.html">Phones</a> | <a href="./upgrades.html">Upgrades</a> </p>
+        <p><a href="./sim_providers.html">SIM providers</a> | <a href="./phones_upcoming.html">Upcoming</a> </p>
+        <p> <a href="./website_feedback.html">Website Feedback</a> | <a href="./contact_us.html">Contact Us</a> </p>
+    </footer>
+
+</body>
+
+</html>
